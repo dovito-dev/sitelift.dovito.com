@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 
@@ -21,7 +20,7 @@ const Header = () => {
             <div className="w-8 h-8 bg-gradient-to-br from-mint-500 to-mint-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">S</span>
             </div>
-            <span className="text-xl font-bold text-slate-900">SiteMint</span>
+            <span className="text-xl font-bold text-slate-900">SiteMint™</span>
           </div>
 
           {/* Desktop Navigation */}

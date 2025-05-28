@@ -1,4 +1,3 @@
-
 const AboutSection = () => {
   return (
     <section id="about" className="py-20 bg-white">
@@ -10,7 +9,7 @@ const AboutSection = () => {
           
           <div className="prose prose-lg mx-auto text-slate-600 leading-relaxed">
             <p className="text-xl mb-6">
-              Founded in the heart of Colorado, SiteMint understands what local businesses need: 
+              Founded in the heart of Colorado, SiteMint™ understands what local businesses need: 
               websites that work as hard as they do. We've seen too many great Colorado companies 
               held back by outdated, slow websites that don't represent their quality and professionalism.
             </p>

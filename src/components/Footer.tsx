@@ -1,3 +1,4 @@
+
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -15,7 +16,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-gradient-to-br from-mint-500 to-mint-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">S</span>
               </div>
-              <span className="text-xl font-bold">SiteMint</span>
+              <span className="text-xl font-bold">SiteMint™</span>
             </div>
             <p className="text-slate-300 mb-6 max-w-md">
               Colorado's premier same-day website service. We transform outdated local business 
@@ -84,7 +85,7 @@ const Footer = () => {
               <a href="#" className="hover:text-mint-400 transition-colors">Sitemap</a>
             </div>
             <div className="text-sm text-slate-400">
-              © 2024 SiteMint. All rights reserved.
+              © 2024 SiteMint™. All rights reserved.
             </div>
           </div>
         </div>
