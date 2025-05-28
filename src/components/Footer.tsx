@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { ContactFormPopup } from '@/components/ContactSection';
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
@@ -79,7 +80,9 @@ const Footer = () => {
             <div className="flex space-x-6 mb-4 md:mb-0 text-sm text-slate-300">
               <Link to="/privacy-policy" className="hover:text-mint-400 transition-colors">Privacy Policy</Link>
               <Link to="/terms" className="hover:text-mint-400 transition-colors">Terms</Link>
-              <a href="#" className="hover:text-mint-400 transition-colors">Contact</a>
+              <ContactFormPopup>
+                <button className="hover:text-mint-400 transition-colors">Contact</button>
+              </ContactFormPopup>
               <a href="#" className="hover:text-mint-400 transition-colors">Sitemap</a>
             </div>
             <div className="text-sm text-slate-400">
