@@ -1,6 +1,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { ContactFormPopup } from '@/components/ContactSection';
 
 const HowItWorksSection = () => {
   const scrollToContact = () => {
@@ -57,13 +58,14 @@ const HowItWorksSection = () => {
         </div>
 
         <div className="text-center">
-          <Button 
-            onClick={scrollToContact}
-            size="lg"
-            className="bg-mint-600 hover:bg-mint-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover-scale"
-          >
-            See My New Site
-          </Button>
+          <ContactFormPopup>
+            <Button 
+              size="lg"
+              className="bg-mint-600 hover:bg-mint-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover-scale"
+            >
+              See My New Site
+            </Button>
+          </ContactFormPopup>
         </div>
       </div>
     </section>
