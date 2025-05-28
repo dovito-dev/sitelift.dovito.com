@@ -1,4 +1,3 @@
-
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -93,11 +92,7 @@ const Footer = () => {
           <div className="bg-slate-800 rounded-lg p-6 mb-8">
             <h4 className="font-semibold text-mint-400 mb-3">Disclaimer</h4>
             <p className="text-sm text-slate-300 leading-relaxed">
-              SiteMint builds new, modern websites inspired by publicly available information on existing business websites. 
-              We use customer branding (logos, text, photos) only as reference to inform layout, styling, and content direction. 
-              SiteMint does <strong>not</strong> replicate, clone, or duplicate any website, nor do we copy protected intellectual property. 
-              All content and design assets used in SiteMint previews are original or AI-generated. Final client approval is always 
-              required before publication.
+              SiteMint creates new, modern websites using publicly available content from existing business websites — including logos, images, and written copy — solely for the purpose of producing a functional design preview. While some content may be copyrighted, it is used under the assumption of fair use for internal review and demonstration purposes only, and is never published without the client's written approval. SiteMint does not replicate, clone, or claim ownership of any intellectual property. All published websites use original, licensed, or client-approved content. Final client approval is always required before any site goes live.
             </p>
           </div>
 
