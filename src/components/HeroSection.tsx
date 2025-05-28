@@ -39,35 +39,36 @@ const HeroSection = () => {
                 <div className="text-left">
                   <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-4">
                     <h3 className="font-semibold text-red-800 mb-2">Before: Outdated</h3>
-                    <div className="bg-gray-200 rounded border-2 border-gray-500 overflow-hidden shadow-inner">
+                    <div className="bg-gray-100 rounded border border-gray-300 overflow-hidden shadow-inner">
                       {/* Old, clunky browser chrome */}
-                      <div className="bg-gray-500 h-8 flex items-center px-3 border-b border-gray-600">
+                      <div className="bg-gray-400 h-8 flex items-center px-3 border-b border-gray-500">
                         <div className="flex space-x-2">
-                          <div className="w-3 h-3 bg-red-400 rounded-full"></div>
-                          <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
-                          <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+                          <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                          <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                          <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                         </div>
-                        <div className="ml-4 bg-gray-400 h-4 w-32 rounded text-xs"></div>
+                        <div className="ml-4 bg-gray-300 h-4 w-32 rounded"></div>
                       </div>
                       {/* Outdated website content */}
                       <div className="bg-white p-4 h-32">
-                        {/* Old-style header with Times font feel */}
-                        <div className="border-b-2 border-blue-800 pb-2 mb-3">
-                          <div className="bg-blue-800 h-3 w-24 mb-1"></div>
-                          <div className="flex space-x-4 mt-2">
-                            <div className="bg-blue-600 h-2 w-12 animate-pulse delay-100"></div>
-                            <div className="bg-blue-600 h-2 w-16 animate-pulse delay-200"></div>
-                            <div className="bg-blue-600 h-2 w-14 animate-pulse delay-300"></div>
+                        {/* Old-style header with basic styling */}
+                        <div className="border-b border-blue-700 pb-2 mb-3">
+                          <div className="bg-blue-700 h-4 w-28 mb-2 font-mono"></div>
+                          <div className="flex space-x-6 mt-2">
+                            <div className="bg-blue-600 h-2 w-12 underline"></div>
+                            <div className="bg-blue-600 h-2 w-16 underline"></div>
+                            <div className="bg-blue-600 h-2 w-14 underline"></div>
                           </div>
                         </div>
-                        {/* Blocky, left-aligned content */}
+                        {/* Simple, left-aligned content */}
                         <div className="space-y-2">
-                          <div className="bg-gray-800 h-2 w-full animate-pulse delay-400"></div>
-                          <div className="bg-gray-700 h-2 w-5/6 animate-pulse delay-500"></div>
-                          <div className="bg-gray-600 h-2 w-4/5 animate-pulse delay-600"></div>
+                          <div className="bg-gray-700 h-2 w-full"></div>
+                          <div className="bg-gray-700 h-2 w-5/6"></div>
+                          <div className="bg-gray-700 h-2 w-4/5"></div>
+                          <div className="bg-gray-700 h-2 w-3/4"></div>
                         </div>
                         <div className="flex justify-start mt-3">
-                          <div className="bg-blue-800 h-4 w-16 border border-black animate-pulse delay-700"></div>
+                          <div className="bg-blue-700 h-4 w-20 border border-gray-400"></div>
                         </div>
                       </div>
                     </div>
