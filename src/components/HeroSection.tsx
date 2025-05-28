@@ -1,6 +1,4 @@
-
 import { Button } from '@/components/ui/button';
-
 const HeroSection = () => {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -10,15 +8,14 @@ const HeroSection = () => {
       });
     }
   };
-
-  return (
-    <section className="pt-20 pb-16 gradient-bg">
+  return <section className="pt-20 pb-16 gradient-bg">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in">
             <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6 leading-tight my-[64px] lg:text-6xl">
               Your New Website Is{' '}
-              <span className="text-mint-600">Already Built</span>
+              <span className="text-mint-600">
+Already Built</span>
             </h1>
             
             <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed my-[26px] sm:text-2xl">
@@ -119,8 +116,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
