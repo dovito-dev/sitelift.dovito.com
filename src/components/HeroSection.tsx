@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -13,7 +12,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in">
-            <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6 leading-tight my-[64px] lg:text-6xl">
+            <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6 leading-none my-[64px] lg:text-6xl">
               Your New Website Is<br />
               <span className="text-mint-600">
 Already Built</span>
