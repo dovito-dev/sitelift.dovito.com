@@ -26,7 +26,7 @@ Already Built</span>
               <Button onClick={scrollToContact} size="lg" className="bg-mint-600 hover:bg-mint-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover-scale shadow-lg">
                 See Your Preview
               </Button>
-              <p className="text-sm text-slate-500">Free • No commitment • Colorado businesses</p>
+              <p className="text-sm text-slate-500">Free • No commitment • For Colorado businesses</p>
             </div>
           </div>
 
