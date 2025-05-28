@@ -83,7 +83,7 @@ const Footer = () => {
               <ContactFormPopup>
                 <button className="hover:text-mint-400 transition-colors">Contact</button>
               </ContactFormPopup>
-              <a href="#" className="hover:text-mint-400 transition-colors">Sitemap</a>
+              <Link to="/sitemap" className="hover:text-mint-400 transition-colors">Sitemap</Link>
             </div>
             <div className="text-sm text-slate-400">
               © 2024 SiteMint™. All rights reserved.
