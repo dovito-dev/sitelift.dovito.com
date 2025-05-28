@@ -22,8 +22,8 @@ const AboutSection = () => {
 
           <div className="mt-12 grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-3xl font-bold text-mint-600 mb-2">100+</div>
-              <div className="text-slate-600">Colorado Businesses Served</div>
+              <div className="text-3xl font-bold text-mint-600 mb-2">0</div>
+              <div className="text-slate-600">Lont-Term Contracts</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-mint-600 mb-2">1 week</div>
