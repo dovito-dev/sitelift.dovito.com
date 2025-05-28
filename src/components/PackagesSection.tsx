@@ -1,17 +1,15 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
-
 const PackagesSection = () => {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <section id="packages" className="py-20 gradient-bg">
+  return <section id="packages" className="py-20 gradient-bg">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
@@ -35,7 +33,7 @@ const PackagesSection = () => {
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
                   <span className="text-mint-600 mr-2">✓</span>
-                  <span className="text-slate-700">Professional preview ready in 24-48 hours</span>
+                  <span className="text-slate-700">Professional preview ready in business week</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-mint-600 mr-2">✓</span>
@@ -50,10 +48,7 @@ const PackagesSection = () => {
                   <span className="text-slate-700">One-time fee, fast turnaround</span>
                 </li>
               </ul>
-              <Button 
-                onClick={scrollToContact}
-                className="w-full bg-mint-600 hover:bg-mint-700 text-white py-3 rounded-full font-semibold"
-              >
+              <Button onClick={scrollToContact} className="w-full bg-mint-600 hover:bg-mint-700 text-white py-3 rounded-full font-semibold">
                 Request Preview
               </Button>
             </CardContent>
@@ -71,7 +66,7 @@ const PackagesSection = () => {
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
                   <span className="text-mint-600 mr-2">✓</span>
-                  <span className="text-slate-700">Complete brand and design overhaul</span>
+                  <span className="text-slate-700">Completely branded and design overhaul</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-mint-600 mr-2">✓</span>
@@ -86,18 +81,13 @@ const PackagesSection = () => {
                   <span className="text-slate-700">High-touch, personalized service</span>
                 </li>
               </ul>
-              <Button 
-                onClick={scrollToContact}
-                className="w-full bg-mint-600 hover:bg-mint-700 text-white py-3 rounded-full font-semibold"
-              >
+              <Button onClick={scrollToContact} className="w-full bg-mint-600 hover:bg-mint-700 text-white py-3 rounded-full font-semibold">
                 Request Preview
               </Button>
             </CardContent>
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default PackagesSection;

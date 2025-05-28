@@ -1,4 +1,3 @@
-
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -18,10 +17,7 @@ const Footer = () => {
               </div>
               <span className="text-xl font-bold">SiteMint™</span>
             </div>
-            <p className="text-slate-300 mb-6 max-w-md">
-              Colorado's premier same-day website service. We transform outdated local business 
-              websites into modern, high-converting digital experiences.
-            </p>
+            <p className="text-slate-300 mb-6 max-w-md">Colorado's premier same-week website service. We transform outdated local business websites into modern, high-converting digital experiences.</p>
             <div className="text-sm text-slate-400">
               <p>📍 Colorado, USA</p>
               <p>📧 hello@sitemint.ai</p>
