@@ -1,10 +1,14 @@
-
+import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Terms = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const getCurrentDate = () => {
     return new Date().toLocaleDateString('en-US', {
       year: 'numeric',

@@ -1,10 +1,14 @@
-
+import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Sitemap = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const scrollToSection = (sectionId: string) => {
     // Navigate to home page first, then scroll to section
     window.location.href = `/#${sectionId}`;
