@@ -1,6 +1,5 @@
 const AboutSection = () => {
-  return (
-    <section id="about" className="py-20 bg-white">
+  return <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-8">
@@ -27,7 +26,7 @@ const AboutSection = () => {
               <div className="text-slate-600">Colorado Businesses Served</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-mint-600 mb-2">24-48hr</div>
+              <div className="text-3xl font-bold text-mint-600 mb-2">1 week</div>
               <div className="text-slate-600">Average Preview Time</div>
             </div>
             <div className="text-center">
@@ -37,8 +36,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
