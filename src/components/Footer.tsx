@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -79,7 +78,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex space-x-6 mb-4 md:mb-0 text-sm text-slate-300">
               <Link to="/privacy-policy" className="hover:text-mint-400 transition-colors">Privacy Policy</Link>
-              <a href="#" className="hover:text-mint-400 transition-colors">Terms</a>
+              <Link to="/terms" className="hover:text-mint-400 transition-colors">Terms</Link>
               <a href="#" className="hover:text-mint-400 transition-colors">Contact</a>
               <a href="#" className="hover:text-mint-400 transition-colors">Sitemap</a>
             </div>
