@@ -1,14 +1,8 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { ContactFormPopup } from '@/components/ContactSection';
+
 const PackagesSection = () => {
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
-  };
   return <section id="packages" className="py-20 gradient-bg">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -48,9 +42,11 @@ const PackagesSection = () => {
                   <span className="text-slate-700">One-time fee, fast turnaround</span>
                 </li>
               </ul>
-              <Button onClick={scrollToContact} className="w-full bg-mint-600 hover:bg-mint-700 text-white py-3 rounded-full font-semibold">
-                Request Preview
-              </Button>
+              <ContactFormPopup>
+                <Button className="w-full bg-mint-600 hover:bg-mint-700 text-white py-3 rounded-full font-semibold">
+                  Request Preview
+                </Button>
+              </ContactFormPopup>
             </CardContent>
           </Card>
 
@@ -81,9 +77,11 @@ const PackagesSection = () => {
                   <span className="text-slate-700">High-touch, personalized service</span>
                 </li>
               </ul>
-              <Button onClick={scrollToContact} className="w-full bg-mint-600 hover:bg-mint-700 text-white py-3 rounded-full font-semibold">
-                Request Preview
-              </Button>
+              <ContactFormPopup>
+                <Button className="w-full bg-mint-600 hover:bg-mint-700 text-white py-3 rounded-full font-semibold">
+                  Request Preview
+                </Button>
+              </ContactFormPopup>
             </CardContent>
           </Card>
         </div>
