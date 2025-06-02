@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -31,7 +32,7 @@ const Sitemap = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-mint-50 to-slate-50">
+    <div className="min-h-screen bg-gradient-to-br from-navy-50 to-slate-50">
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="mb-8">
           <Link to="/">
@@ -44,7 +45,7 @@ const Sitemap = () => {
 
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-slate-900 mb-4">Sitemap</h1>
-          <p className="text-slate-600">Complete overview of all pages and sections on the SiteMint website.</p>
+          <p className="text-slate-600">Complete overview of all pages and sections on the SiteLift website.</p>
         </div>
 
         <div className="grid gap-6">
@@ -105,9 +106,9 @@ const Sitemap = () => {
             </CardHeader>
             <CardContent>
               <div className="bg-slate-50 p-4 rounded-lg">
-                <p className="text-slate-700 font-semibold">SiteMint</p>
+                <p className="text-slate-700 font-semibold">SiteLift</p>
                 <p className="text-slate-700">655 Southwood Ln Windsor, CO 80550</p>
-                <p className="text-slate-700">hello@sitemint.ai</p>
+                <p className="text-slate-700">hello@sitelift.ai</p>
                 <p className="text-slate-700">9704788220</p>
               </div>
             </CardContent>

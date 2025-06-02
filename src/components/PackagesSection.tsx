@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { ContactFormPopup } from '@/components/ContactSection';
@@ -15,9 +16,9 @@ const PackagesSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <Card className="border-2 border-slate-200 hover:border-mint-300 transition-all duration-300 hover-scale bg-white">
+          <Card className="border-2 border-slate-200 hover:border-navy-300 transition-all duration-300 hover-scale bg-white">
             <CardHeader className="text-center p-8">
-              <div className="w-16 h-16 bg-mint-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-navy-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">⚡</span>
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-2">Done + Ready</h3>
@@ -26,33 +27,33 @@ const PackagesSection = () => {
             <CardContent className="px-8 pb-8">
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
-                  <span className="text-mint-600 mr-2">✓</span>
+                  <span className="text-navy-600 mr-2">✓</span>
                   <span className="text-slate-700">Professional preview ready in business week</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-mint-600 mr-2">✓</span>
+                  <span className="text-navy-600 mr-2">✓</span>
                   <span className="text-slate-700">Modern design using your existing content</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-mint-600 mr-2">✓</span>
+                  <span className="text-navy-600 mr-2">✓</span>
                   <span className="text-slate-700">Mobile-optimized and fast loading</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-mint-600 mr-2">✓</span>
+                  <span className="text-navy-600 mr-2">✓</span>
                   <span className="text-slate-700">One-time fee, fast turnaround</span>
                 </li>
               </ul>
               <ContactFormPopup>
-                <Button className="w-full bg-mint-600 hover:bg-mint-700 text-white py-3 rounded-full font-semibold">
+                <Button className="w-full bg-navy-600 hover:bg-navy-700 text-white py-3 rounded-full font-semibold">
                   Request Preview
                 </Button>
               </ContactFormPopup>
             </CardContent>
           </Card>
 
-          <Card className="border-2 border-slate-200 hover:border-mint-300 transition-all duration-300 hover-scale bg-white">
+          <Card className="border-2 border-slate-200 hover:border-navy-300 transition-all duration-300 hover-scale bg-white">
             <CardHeader className="text-center p-8">
-              <div className="w-16 h-16 bg-mint-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-navy-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🎨</span>
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-2">Custom Design</h3>
@@ -61,24 +62,24 @@ const PackagesSection = () => {
             <CardContent className="px-8 pb-8">
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
-                  <span className="text-mint-600 mr-2">✓</span>
+                  <span className="text-navy-600 mr-2">✓</span>
                   <span className="text-slate-700">Completely branded and design overhaul</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-mint-600 mr-2">✓</span>
+                  <span className="text-navy-600 mr-2">✓</span>
                   <span className="text-slate-700">Full collaboration throughout process</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-mint-600 mr-2">✓</span>
+                  <span className="text-navy-600 mr-2">✓</span>
                   <span className="text-slate-700">Custom features and functionality</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-mint-600 mr-2">✓</span>
+                  <span className="text-navy-600 mr-2">✓</span>
                   <span className="text-slate-700">High-touch, personalized service</span>
                 </li>
               </ul>
               <ContactFormPopup>
-                <Button className="w-full bg-mint-600 hover:bg-mint-700 text-white py-3 rounded-full font-semibold">
+                <Button className="w-full bg-navy-600 hover:bg-navy-700 text-white py-3 rounded-full font-semibold">
                   Request Preview
                 </Button>
               </ContactFormPopup>

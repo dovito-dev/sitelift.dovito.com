@@ -57,17 +57,17 @@ const ShowcaseSection = () => {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {showcaseItems.map((item, index) => (
-            <Card key={index} className="border-2 border-slate-200 hover:border-mint-300 transition-all duration-300 hover-scale bg-white overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-mint-100 to-mint-200 relative overflow-hidden">
+            <Card key={index} className="border-2 border-slate-200 hover:border-navy-300 transition-all duration-300 hover-scale bg-white overflow-hidden">
+              <div className="aspect-video bg-gradient-to-br from-navy-100 to-navy-200 relative overflow-hidden">
                 <img 
                   src={item.image} 
                   alt={item.title}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-mint-900/20"></div>
+                <div className="absolute inset-0 bg-navy-900/20"></div>
               </div>
               <CardContent className="p-6">
-                <div className="text-sm text-mint-600 font-medium mb-2">{item.category}</div>
+                <div className="text-sm text-navy-600 font-medium mb-2">{item.category}</div>
                 <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
               </CardContent>
             </Card>
@@ -78,7 +78,7 @@ const ShowcaseSection = () => {
           <Button 
             onClick={scrollToContact}
             size="lg"
-            className="bg-mint-600 hover:bg-mint-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover-scale"
+            className="bg-navy-600 hover:bg-navy-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover-scale"
           >
             Request a Preview for Your Business
           </Button>

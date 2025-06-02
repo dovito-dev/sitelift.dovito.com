@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 
@@ -17,41 +18,41 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-mint-500 to-mint-600 rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-to-br from-navy-600 to-navy-700 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">S</span>
             </div>
-            <span className="text-xl font-bold text-slate-900">SiteMint™</span>
+            <span className="text-xl font-bold text-slate-900">SiteLift™</span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('how-it-works')}
-              className="text-slate-600 hover:text-mint-600 transition-colors"
+              className="text-slate-600 hover:text-navy-600 transition-colors"
             >
               How It Works
             </button>
             <button 
               onClick={() => scrollToSection('packages')}
-              className="text-slate-600 hover:text-mint-600 transition-colors"
+              className="text-slate-600 hover:text-navy-600 transition-colors"
             >
               Packages
             </button>
             <button 
               onClick={() => scrollToSection('showcase')}
-              className="text-slate-600 hover:text-mint-600 transition-colors"
+              className="text-slate-600 hover:text-navy-600 transition-colors"
             >
               Showcase
             </button>
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-slate-600 hover:text-mint-600 transition-colors"
+              className="text-slate-600 hover:text-navy-600 transition-colors"
             >
               About
             </button>
             <Button 
               onClick={() => scrollToSection('contact')}
-              className="bg-mint-600 hover:bg-mint-700 text-white px-6 py-2 rounded-full"
+              className="bg-navy-600 hover:bg-navy-700 text-white px-6 py-2 rounded-full"
             >
               Get Started
             </Button>
@@ -76,31 +77,31 @@ const Header = () => {
             <nav className="flex flex-col space-y-4">
               <button 
                 onClick={() => scrollToSection('how-it-works')}
-                className="text-slate-600 hover:text-mint-600 transition-colors text-left"
+                className="text-slate-600 hover:text-navy-600 transition-colors text-left"
               >
                 How It Works
               </button>
               <button 
                 onClick={() => scrollToSection('packages')}
-                className="text-slate-600 hover:text-mint-600 transition-colors text-left"
+                className="text-slate-600 hover:text-navy-600 transition-colors text-left"
               >
                 Packages
               </button>
               <button 
                 onClick={() => scrollToSection('showcase')}
-                className="text-slate-600 hover:text-mint-600 transition-colors text-left"
+                className="text-slate-600 hover:text-navy-600 transition-colors text-left"
               >
                 Showcase
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
-                className="text-slate-600 hover:text-mint-600 transition-colors text-left"
+                className="text-slate-600 hover:text-navy-600 transition-colors text-left"
               >
                 About
               </button>
               <Button 
                 onClick={() => scrollToSection('contact')}
-                className="bg-mint-600 hover:bg-mint-700 text-white w-full rounded-full"
+                className="bg-navy-600 hover:bg-navy-700 text-white w-full rounded-full"
               >
                 Get Started
               </Button>

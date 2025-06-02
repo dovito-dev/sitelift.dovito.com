@@ -14,7 +14,7 @@ const HeroSection = () => {
           <div className="animate-fade-in">
             <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6 leading-none my-[64px] lg:text-6xl">
               Your New Website Is<br />
-              <span className="text-mint-600">
+              <span className="text-navy-600">
 Already Built</span>
             </h1>
             
@@ -23,7 +23,7 @@ Already Built</span>
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Button onClick={scrollToContact} size="lg" className="bg-mint-600 hover:bg-mint-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover-scale shadow-lg">
+              <Button onClick={scrollToContact} size="lg" className="bg-navy-600 hover:bg-navy-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover-scale shadow-lg">
                 See Your Preview
               </Button>
               <p className="text-sm text-slate-500">Free • No commitment • For Colorado businesses</p>
@@ -73,9 +73,9 @@ Already Built</span>
                   </div>
                 </div>
                 <div className="text-left">
-                  <div className="bg-mint-50 border border-mint-200 rounded-lg p-4">
-                    <h3 className="font-semibold text-mint-800 mb-2">After: Modern</h3>
-                    <div className="bg-white rounded-xl border border-mint-100 overflow-hidden shadow-lg">
+                  <div className="bg-navy-50 border border-navy-200 rounded-lg p-4">
+                    <h3 className="font-semibold text-navy-800 mb-2">After: Modern</h3>
+                    <div className="bg-white rounded-xl border border-navy-100 overflow-hidden shadow-lg">
                       {/* Modern browser chrome */}
                       <div className="bg-gray-50 h-6 flex items-center px-3 border-b border-gray-100">
                         <div className="flex space-x-1.5">
@@ -86,18 +86,18 @@ Already Built</span>
                         <div className="ml-3 bg-gray-100 h-3 w-28 rounded-full"></div>
                       </div>
                       {/* Modern website content */}
-                      <div className="bg-gradient-to-br from-mint-50 via-white to-mint-25 p-4 h-32">
+                      <div className="bg-gradient-to-br from-navy-50 via-white to-navy-25 p-4 h-32">
                         {/* Modern hero section */}
                         <div className="text-center space-y-2">
-                          <div className="bg-gradient-to-r from-mint-600 to-mint-500 h-3 w-20 mx-auto rounded-full animate-fade-in"></div>
+                          <div className="bg-gradient-to-r from-navy-600 to-navy-500 h-3 w-20 mx-auto rounded-full animate-fade-in"></div>
                           <div className="space-y-1">
                             <div className="bg-slate-200 h-1.5 w-full rounded-full animate-fade-in delay-100"></div>
                             <div className="bg-slate-200 h-1.5 w-4/5 mx-auto rounded-full animate-fade-in delay-200"></div>
                             <div className="bg-slate-200 h-1.5 w-3/5 mx-auto rounded-full animate-fade-in delay-300"></div>
                           </div>
                           <div className="flex justify-center space-x-2 mt-4">
-                            <div className="bg-gradient-to-r from-mint-600 to-mint-500 h-3 w-12 rounded-full animate-fade-in delay-400 hover-scale shadow-sm"></div>
-                            <div className="bg-white border border-mint-200 h-3 w-10 rounded-full animate-fade-in delay-500"></div>
+                            <div className="bg-gradient-to-r from-navy-600 to-navy-500 h-3 w-12 rounded-full animate-fade-in delay-400 hover-scale shadow-sm"></div>
+                            <div className="bg-white border border-navy-200 h-3 w-10 rounded-full animate-fade-in delay-500"></div>
                           </div>
                         </div>
                         {/* Modern card elements */}
@@ -108,7 +108,7 @@ Already Built</span>
                         </div>
                       </div>
                     </div>
-                    <p className="text-xs text-mint-600 mt-2">Lightning fast, mobile-optimized, modern design</p>
+                    <p className="text-xs text-navy-600 mt-2">Lightning fast, mobile-optimized, modern design</p>
                   </div>
                 </div>
               </div>
