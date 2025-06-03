@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
@@ -6,9 +5,11 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
+import { submitToAirtable } from '@/services/airtableService';
 
 const ContactForm = ({ onSuccess }: { onSuccess?: () => void }) => {
   const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     businessName: '',
@@ -17,28 +18,45 @@ const ContactForm = ({ onSuccess }: { onSuccess?: () => void }) => {
     phone: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // For now, using a placeholder token - in production you'd want this secured
+  const AIRTABLE_TOKEN = 'your_personal_access_token_here';
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsLoading(true);
     
-    console.log('Form submitted:', formData);
+    console.log('Submitting form data:', formData);
     
-    toast({
-      title: "Preview Request Submitted!",
-      description: "We'll have your preview ready within 24-48 hours. Check your email for next steps.",
-    });
+    try {
+      await submitToAirtable(formData, AIRTABLE_TOKEN);
+      
+      toast({
+        title: "Preview Request Submitted!",
+        description: "We'll have your preview ready within 24-48 hours. Check your email for next steps.",
+      });
 
-    // Reset form
-    setFormData({
-      name: '',
-      businessName: '',
-      website: '',
-      email: '',
-      phone: ''
-    });
+      // Reset form
+      setFormData({
+        name: '',
+        businessName: '',
+        website: '',
+        email: '',
+        phone: ''
+      });
 
-    // Call success callback if provided (for popup)
-    if (onSuccess) {
-      onSuccess();
+      // Call success callback if provided (for popup)
+      if (onSuccess) {
+        onSuccess();
+      }
+    } catch (error) {
+      console.error('Error submitting to Airtable:', error);
+      toast({
+        title: "Submission Failed",
+        description: "There was an error submitting your request. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -61,8 +79,9 @@ const ContactForm = ({ onSuccess }: { onSuccess?: () => void }) => {
             required
             value={formData.name}
             onChange={handleChange}
-            className="mt-1 border-slate-300 focus:border-mint-500 focus:ring-mint-500"
+            className="mt-1 border-slate-300 focus:border-navy-500 focus:ring-navy-500"
             placeholder="John Smith"
+            disabled={isLoading}
           />
         </div>
         <div>
@@ -74,8 +93,9 @@ const ContactForm = ({ onSuccess }: { onSuccess?: () => void }) => {
             required
             value={formData.businessName}
             onChange={handleChange}
-            className="mt-1 border-slate-300 focus:border-mint-500 focus:ring-mint-500"
+            className="mt-1 border-slate-300 focus:border-navy-500 focus:ring-navy-500"
             placeholder="Your Business LLC"
+            disabled={isLoading}
           />
         </div>
       </div>
@@ -88,8 +108,9 @@ const ContactForm = ({ onSuccess }: { onSuccess?: () => void }) => {
           type="url"
           value={formData.website}
           onChange={handleChange}
-          className="mt-1 border-slate-300 focus:border-mint-500 focus:ring-mint-500"
+          className="mt-1 border-slate-300 focus:border-navy-500 focus:ring-navy-500"
           placeholder="https://yourbusiness.com"
+          disabled={isLoading}
         />
       </div>
 
@@ -103,8 +124,9 @@ const ContactForm = ({ onSuccess }: { onSuccess?: () => void }) => {
             required
             value={formData.email}
             onChange={handleChange}
-            className="mt-1 border-slate-300 focus:border-mint-500 focus:ring-mint-500"
+            className="mt-1 border-slate-300 focus:border-navy-500 focus:ring-navy-500"
             placeholder="john@yourbusiness.com"
+            disabled={isLoading}
           />
         </div>
         <div>
@@ -115,8 +137,9 @@ const ContactForm = ({ onSuccess }: { onSuccess?: () => void }) => {
             type="tel"
             value={formData.phone}
             onChange={handleChange}
-            className="mt-1 border-slate-300 focus:border-mint-500 focus:ring-mint-500"
+            className="mt-1 border-slate-300 focus:border-navy-500 focus:ring-navy-500"
             placeholder="(303) 555-0123"
+            disabled={isLoading}
           />
         </div>
       </div>
@@ -124,9 +147,10 @@ const ContactForm = ({ onSuccess }: { onSuccess?: () => void }) => {
       <Button 
         type="submit"
         size="lg"
-        className="w-full bg-mint-600 hover:bg-mint-700 text-white py-4 rounded-full text-lg font-semibold hover-scale"
+        disabled={isLoading}
+        className="w-full bg-navy-600 hover:bg-navy-700 text-white py-4 rounded-full text-lg font-semibold hover-scale disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        Request a Free Site Preview
+        {isLoading ? 'Submitting...' : 'Request a Free Site Preview'}
       </Button>
     </form>
   );
