@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -19,6 +18,7 @@ const Sitemap = () => {
     { name: 'Home', path: '/', description: 'Main landing page with all services and information' },
     { name: 'Privacy Policy', path: '/privacy-policy', description: 'Our privacy policy and data handling practices' },
     { name: 'Terms and Conditions', path: '/terms', description: 'Terms of service and conditions of use' },
+    { name: 'Brand Guidelines', path: '/branding', description: 'Complete branding documentation for developers and designers' },
   ];
 
   const sections = [
