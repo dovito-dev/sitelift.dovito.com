@@ -15,20 +15,17 @@ const HowItWorksSection = () => {
     {
       number: "01",
       title: "We Identify Outdated Sites",
-      description: "Our team finds Colorado businesses with websites that need a modern refresh.",
-      icon: "🔍"
+      description: "Our team finds Colorado businesses with websites that need a modern refresh."
     },
     {
       number: "02", 
       title: "We Rebuild Using Your Content",
-      description: "We create a modern version using your existing branding, content, and business information.",
-      icon: "⚡"
+      description: "We create a modern version using your existing branding, content, and business information."
     },
     {
       number: "03",
       title: "You Preview and Approve",
-      description: "See your new site first. Love it? Launch it. Want changes? We'll customize it perfectly.",
-      icon: "✨"
+      description: "See your new site first. Love it? Launch it. Want changes? We'll customize it perfectly."
     }
   ];
 
@@ -48,7 +45,6 @@ const HowItWorksSection = () => {
           {steps.map((step, index) => (
             <Card key={index} className="border-2 border-slate-100 hover:border-navy-200 transition-all duration-300 hover-scale">
               <CardContent className="p-8 text-center">
-                <div className="text-4xl mb-4">{step.icon}</div>
                 <div className="text-navy-600 font-bold text-lg mb-2">{step.number}</div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-4">{step.title}</h3>
                 <p className="text-slate-600 leading-relaxed">{step.description}</p>

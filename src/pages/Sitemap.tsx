@@ -45,7 +45,7 @@ const Sitemap = () => {
 
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-slate-900 mb-4">Sitemap</h1>
-          <p className="text-slate-600">Complete overview of all pages and sections on the SiteLift website.</p>
+          <p className="text-slate-600">Complete overview of all pages and sections on the Dovito.Site website.</p>
         </div>
 
         <div className="grid gap-6">
@@ -106,9 +106,9 @@ const Sitemap = () => {
             </CardHeader>
             <CardContent>
               <div className="bg-slate-50 p-4 rounded-lg">
-                <p className="text-slate-700 font-semibold">SiteLift</p>
+                <p className="text-slate-700 font-semibold">Dovito.Site</p>
                 <p className="text-slate-700">655 Southwood Ln Windsor, CO 80550</p>
-                <p className="text-slate-700">hello@sitelift.ai</p>
+                <p className="text-slate-700">hello@dovito.site</p>
                 <p className="text-slate-700">9704788220</p>
               </div>
             </CardContent>
