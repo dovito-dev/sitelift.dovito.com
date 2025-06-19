@@ -26,7 +26,6 @@ const AddOnsSection = () => {
   const addOns = [
     {
       title: "Hosting",
-      price: "$39/mo",
       description: "Fast, secure hosting with 99.9% uptime guarantee",
       features: [
         "Lightning-fast SSD storage",
@@ -37,7 +36,6 @@ const AddOnsSection = () => {
     },
     {
       title: "Marketing Automation",
-      price: "$197/mo", 
       description: "Complete marketing system to grow your business",
       features: [
         "Email marketing campaigns",
@@ -48,7 +46,6 @@ const AddOnsSection = () => {
     },
     {
       title: "24/7 Unlimited Edits",
-      price: "$497/mo (quarterly)",
       description: "Unlimited website updates whenever you need them",
       features: [
         "Unlimited content updates",
@@ -82,10 +79,7 @@ const AddOnsSection = () => {
                         <h3 className="text-xl font-semibold text-slate-900">{addOn.title}</h3>
                         <p className="text-slate-600 mt-1">{addOn.description}</p>
                       </div>
-                      <div className="flex items-center space-x-4">
-                        <span className="text-2xl font-bold text-mint-600">{addOn.price}</span>
-                        <ChevronDown className={`w-5 h-5 text-slate-400 transition-transform ${openAddOns.includes(index) ? 'rotate-180' : ''}`} />
-                      </div>
+                      <ChevronDown className={`w-5 h-5 text-slate-400 transition-transform ${openAddOns.includes(index) ? 'rotate-180' : ''}`} />
                     </div>
                   </CardHeader>
                 </CollapsibleTrigger>
