@@ -1,8 +1,6 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { ContactFormPopup } from '@/components/ContactSection';
-
 const PackagesSection = () => {
   return <section id="packages" className="py-20 gradient-bg">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -18,9 +16,7 @@ const PackagesSection = () => {
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <Card className="border-2 border-slate-200 hover:border-navy-300 transition-all duration-300 hover-scale bg-white">
             <CardHeader className="text-center p-8">
-              <div className="w-16 h-16 bg-navy-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-navy-600">⚡</span>
-              </div>
+              
               <h3 className="text-2xl font-bold text-slate-900 mb-2">Done + Ready</h3>
               <p className="text-slate-600">Perfect for businesses that want a modern site fast</p>
             </CardHeader>
@@ -53,9 +49,7 @@ const PackagesSection = () => {
 
           <Card className="border-2 border-slate-200 hover:border-navy-300 transition-all duration-300 hover-scale bg-white">
             <CardHeader className="text-center p-8">
-              <div className="w-16 h-16 bg-navy-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-navy-600">🎨</span>
-              </div>
+              
               <h3 className="text-2xl font-bold text-slate-900 mb-2">Custom Design</h3>
               <p className="text-slate-600">Full collaboration for a complete brand transformation</p>
             </CardHeader>
